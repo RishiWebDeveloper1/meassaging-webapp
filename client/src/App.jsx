@@ -9,12 +9,10 @@ function App() {
 	const [allChats, setAllChats] = useState([]);
 
 	const onEmojiClick = (event) => {
-		// Append the selected emoji to the message
 		setMessage(prevMessage => prevMessage + event.emoji);
 	};
 
 	function sendMessage() {
-		console.log("dsfgvdsg")
 		const newMessage = <>
 			<div className="self-chat-label-container">
 				<div className="self-chat-label-box">
@@ -23,8 +21,14 @@ function App() {
 						11:32 pm ✔️✔️
 					</div>
 				</div>
+				<div className="self-chat-tail-box">
+					<img src="/chat-icon-tail-green.png" alt="" className="self-chat-tail" />
+				</div>
 			</div>
 			<div className="other-chat-label-container">
+				<div className="other-chat-tail-box">
+					<img src="/chat-icon-tail-gray.png" alt="" className="other-chat-tail" />
+				</div>
 				<div className="other-chat-label-box">
 					me tho thik hu
 					Tu kesa hai bhai bahut dino se nahi mila haime tho thik hu
@@ -127,11 +131,12 @@ function App() {
 								/>
 							</div>
 							<div className="nav-icon-box">
-								<img src="/paper-clip-icon.png" alt="Attach" className="nav-icon" />
+								<img src="/paper-clip-icon.png" alt="Attach" className="nav-icon" onClick={() => document.getElementById("uploadFileInput").click()} />
 							</div>
 							<div className="message-input-box">
-								<textarea className="message-input" name="message-input" id="messageInput" value={message} onChange={(e) => setMessage(e.target.value)} autoFocus
+								<textarea className="message-input" name="message-input" id="messageInput" value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Type a Message' autoFocus
 								/>
+								<input type="file" name="name" id='uploadFileInput' style={{ display: "none" }} />
 							</div>
 							<div className="nav-icon-box">
 								<img src="/send-icon.png" alt="Send" onClick={sendMessage} className="nav-icon"
