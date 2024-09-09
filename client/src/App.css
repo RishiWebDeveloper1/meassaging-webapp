@@ -289,6 +289,9 @@
 	background-color: green;
 	font-size: 14px;
 	border-radius: 10px 0px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .time-box {
@@ -329,11 +332,14 @@
 	max-width: 50%;
 	min-width: 200px;
 	height: fit-content;
-	min-height: 50px;
+	min-height: 34px;
 	padding: 8px;
 	background-color: gray;
 	font-size: 14px;
 	border-radius: 0px 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 

@@ -3,7 +3,7 @@ import './App.css'
 import Emoji from './component/Emoji';
 
 function App() {
-	let num = 50
+	let num = 20
 	const [emojiCheck, setEmojiCheck] = useState(false);
 	const [message, setMessage] = useState('');
 	const [allChats, setAllChats] = useState([]);
@@ -30,11 +30,7 @@ function App() {
 					<img src="/chat-icon-tail-gray.png" alt="" className="other-chat-tail" />
 				</div>
 				<div className="other-chat-label-box">
-					me tho thik hu
-					Tu kesa hai bhai bahut dino se nahi mila haime tho thik hu
-					Tu kesa hai bhai bahut dino se nahi mila haime tho thik hu
-					Tu kesa hai bhai bahut dino se nahi mila haime tho thik hu
-					Tu kesa hai bhai bahut dino se nahi mila hai
+					Ye sab rehene de, Or bata kya chal raha hai
 					<div className="time-box">
 						11:32 pm ✔️✔️
 					</div>
@@ -58,6 +54,9 @@ function App() {
 						</div>
 						<div className="nav-icon-box">
 							<img src="/videos-icon.png" alt="" className="nav-icon" />
+						</div>
+						<div className="nav-icon-box">
+							<img src="/AI-logo-1.png" alt="" className="nav-icon" />
 						</div>
 					</div>
 					<div className="user-card-list-box">
