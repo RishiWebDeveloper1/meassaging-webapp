@@ -192,7 +192,7 @@
 .chat-box-container {
 	width: calc(60% - 25px);
 	height: 100%;
-	background-image: url("background-image.jpg");
+	background-image: url("/background-image.jpg");
 }
 
 .user-menu-box {
